@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  padding: 40px;
+  background: #111;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+/* ==========================
+   Gallery
+========================== */
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: 0.35s ease;
+}
+
+.card img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(255, 49, 49, 0.5);
+}
+
+/* ==========================
+   Full Screen Modal
+========================== */
+
+.image-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.98);
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  z-index: 99999;
+}
+
+/* Screen almost full occupy chestundi */
+
+.image-modal img {
+  width: auto;
+  height: auto;
+
+  max-width: 95vw;
+  max-height: 90vh;
+
+  object-fit: contain;
+
+  border-radius: 10px;
+
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.15);
+}
+
+/* Description */
+
+#modalDescription {
+  margin-top: 18px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  max-width: 90%;
+}
+
+/* ==========================
+   Close Button
+========================== */
+
+.close-modal {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #ff3131;
+  color: #fff;
+
+  border-radius: 50%;
+
+  font-size: 34px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.close-modal:hover {
+  background: #fff;
+  color: #ff3131;
+  transform: rotate(90deg) scale(1.1);
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  #gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card img {
+    height: 220px;
+  }
+
+  .image-modal img {
+    max-width: 98vw;
+    max-height: 75vh;
+  }
+
+  #modalDescription {
+    font-size: 18px;
+    padding: 0 15px;
+  }
+
+  .close-modal {
+    width: 45px;
+    height: 45px;
+    font-size: 28px;
+    top: 15px;
+    right: 15px;
+  }
+}

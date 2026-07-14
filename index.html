@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <div id="spotlight"></div>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prasanth | Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <div id="galleryModal" class="gallery-modal">
+    <span class="close" onclick="closeGallery()">&times;</span>
+
+    <div id="galleryContainer"></div>
+  </div>
+
+  <body>
+    <!-- Header -->
+
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="Logo.png" alt="Logo" />
+      </a>
+
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+
+        <h1><span id="typing-name"></span></h1>
+
+        <h3>I'm a <span>Graphic Designer</span></h3>
+
+        <p>
+          Creative and enthusiastic Graphic Designer with practical knowledge of
+          Adobe Photoshop and Canva. Passionate about creating visually
+          appealing designs, photo editing and image enhancement.
+        </p>
+
+        <div class="social-media">
+          <a href="mailto:prasanthdonthamsetti@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/bala-veera-prasanth-donthamsetti-432779392"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a href="tel:+919347793665">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+
+        <a href="PrasanthResume.pdf" download class="btn"> Download Resume </a>
+      </div>
+
+      <div class="home-img">
+        <img
+          src="https://res.cloudinary.com/ujcknmqa/image/upload/f_auto,q_auto/v1783789088/DSC_2911_n4k2ta.jpg"
+          alt="Prasanth"
+        />
+      </div>
+    </section>
+
+    <!-- About -->
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="Logo.png" alt="Prasanth" />
+      </div>
+
+      <div class="about-content skill-box">
+        <h2 class="heading">About <span>Me</span></h2>
+
+        <h3>Graphic Designer</h3>
+
+        <p>
+          I am a passionate Graphic Designer with hands-on experience in Adobe
+          Photoshop and Canva. I enjoy designing posters, photo frames, social
+          media posts and editing images. I always focus on creativity, quality
+          and attention to detail. I am looking for an opportunity where I can
+          learn, improve my skills and contribute to the organization.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+
+    <section class="skills" id="skills">
+      <h2 class="heading">My <span>Skills</span></h2>
+
+      <div class="skills-container">
+        <div class="skill-box">
+          <i class="fa-solid fa-image"></i>
+
+          <h3>Adobe Photoshop</h3>
+
+          <p>
+            Professional photo editing, retouching, image enhancement and
+            creative design.
+          </p>
+        </div>
+
+        <div class="skill-box">
+          <i class="fa-solid fa-camera"></i>
+
+          <h3>Canva</h3>
+
+          <p>
+            Posters, banners, flyers, social media posts and presentation
+            designs.
+          </p>
+        </div>
+
+        <div class="skill-box">
+          <i class="fa-solid fa-camera"></i>
+
+          <h3>Photo Editing</h3>
+
+          <p>
+            Image enhancement, background editing, frame creation and color
+            correction.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+
+    <section class="projects" id="projects">
+      <h2 class="heading">My <span>Projects</span></h2>
+
+      <div class="project-container">
+        <div class="project-box">
+          <i class="fa-solid fa-image"></i>
+
+          <h3>Photo Editing</h3>
+
+          <p>Edited images professionally using Adobe Photoshop.</p>
+
+          <a href="gallery.html?category=photo-editing" class="btn view-btn">
+            View
+          </a>
+        </div>
+
+        <div class="project-box">
+          <i class="fa-solid fa-photo-film"></i>
+
+          <h3>Photo Frame Design</h3>
+
+          <p>Designed custom photo frames with attractive creative styles.</p>
+
+          <a href="gallery.html?category=photo-frame" class="btn view-btn">
+            View
+          </a>
+        </div>
+
+        <div class="project-box">
+          <i class="fa-solid fa-palette"></i>
+
+          <h3>Poster Design</h3>
+
+          <p>Designed posters, banners and promotional creatives.</p>
+
+          <a href="gallery.html?category=poster" class="btn view-btn"> View </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+
+    <section class="resume" id="resume">
+      <h2 class="heading">My <span>Resume</span></h2>
+
+      <p>Click below to view or download my resume.</p>
+
+      <a href="Prasanth Resume.pdf" target="_blank" class="btn">
+        Download Resume
+      </a>
+    </section>
+
+    <!-- Contact -->
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form
+        action="https://formspree.io/f/mqerabql"
+        method="POST"
+        class="contact-form"
+      >
+        <div class="input-box">
+          <input type="text" name="name" placeholder="Full Name" required />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+        </div>
+
+        <div class="input-box">
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Mobile Number"
+            pattern="[0-9]{10}"
+            required
+          />
+
+          <input type="text" name="subject" placeholder="Subject" />
+        </div>
+
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+          required
+        ></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>© 2026 Bala Veera Prasanth Donthamsetti | All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

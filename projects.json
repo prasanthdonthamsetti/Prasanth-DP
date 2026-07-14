@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "category": "photo-editing",
+    "image": "https://picsum.photos/id/1015/2000/1400",
+    "description": "Mountain Landscape"
+  },
+  {
+    "id": 2,
+    "category": "photo-editing",
+    "image": "https://picsum.photos/id/1025/2000/1400",
+    "description": "Cute Dog"
+  },
+  {
+    "id": 3,
+    "category": "photo-editing",
+    "image": "https://picsum.photos/id/1035/2000/1400",
+    "description": "River View"
+  },
+  {
+    "id": 4,
+    "category": "photo-frame",
+    "image": "https://picsum.photos/id/1040/2000/1400",
+    "description": "Modern Frame Design"
+  },
+  {
+    "id": 5,
+    "category": "photo-frame",
+    "image": "https://picsum.photos/id/1050/2000/1400",
+    "description": "Creative Frame"
+  },
+  {
+    "id": 6,
+    "category": "photo-frame",
+    "image": "https://picsum.photos/id/1060/2000/1400",
+    "description": "Wedding Frame"
+  },
+  {
+    "id": 7,
+    "category": "poster",
+    "image": "https://picsum.photos/id/1015/2000/1400",
+    "description": "Event Poster"
+  },
+  {
+    "id": 8,
+    "category": "poster",
+    "image": "https://picsum.photos/id/1080/2000/1400",
+    "description": "Business Poster"
+  },
+  {
+    "id": 9,
+    "category": "poster",
+    "image": "https://picsum.photos/id/1090/2000/1400",
+    "description": "Creative Poster"
+  }
+]
